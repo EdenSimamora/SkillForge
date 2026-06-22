@@ -1,0 +1,73 @@
+#: .\templates\base.html:9 .\templates\base.html:30
+msgid "SkillForge"
+msgstr "SkillForge"
+
+#: .\templates\base.html:46
+msgid "Dashboard"
+msgstr "Beranda"
+
+#: .\templates\base.html:53 .\templates\tracker\add_skill.html:6
+#: .\templates\tracker\home.html:15
+msgid "Add Skill"
+msgstr "Tambah Skill"
+
+#: .\templates\base.html:94
+msgid "Built with Django + Bootstrap"
+msgstr "Dibuat dengan Django + Bootstrap"
+
+#: .\templates\tracker\add_skill.html:15
+msgid "Save"
+msgstr "Simpan"
+
+#: .\templates\tracker\add_skill.html:19
+#: .\templates\tracker\delete_skill.html:19
+msgid "Cancel"
+msgstr "Batal"
+
+#: .\templates\tracker\delete_skill.html:7
+msgid "Are you sure you want to delete"
+msgstr "Apakah kamu yakin ingin menghapus"
+
+#: .\templates\tracker\delete_skill.html:15 .\templates\tracker\home.html:96
+msgid "Delete"
+msgstr "Hapus"
+
+#: .\templates\tracker\home.html:10
+msgid "My Skills"
+msgstr "Skill Saya"
+
+#: .\templates\tracker\home.html:27
+msgid "Search skill..."
+msgstr "Cari skill..."
+
+#: .\templates\tracker\home.html:31
+msgid "Search"
+msgstr "Cari"
+
+#: .\templates\tracker\home.html:40
+msgid "Total Skills"
+msgstr "Total Skill"
+
+#: .\templates\tracker\home.html:48
+msgid "Skill"
+msgstr "Skill"
+
+#: .\templates\tracker\home.html:49
+msgid "Category"
+msgstr "Kategori"
+
+#: .\templates\tracker\home.html:50
+msgid "Level"
+msgstr "Level"
+
+#: .\templates\tracker\home.html:51
+msgid "Progress"
+msgstr "Progress"
+
+#: .\templates\tracker\home.html:52
+msgid "Action"
+msgstr "Aksi"
+
+#: .\templates\tracker\home.html:108
+msgid "No skills found"
+msgstr "Tidak ada skill ditemukan"

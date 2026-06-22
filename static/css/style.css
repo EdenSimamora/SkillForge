@@ -1,0 +1,137 @@
+/* =========================
+SkillForge Custom Styles
+========================= */
+
+body {
+background-color: #f8f9fa;
+min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+font-weight: 700;
+font-size: 1.4rem;
+}
+
+/* Cards */
+.card {
+border: none;
+border-radius: 15px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+transition: transform 0.2s ease;
+}
+
+.card:hover {
+transform: translateY(-3px);
+}
+
+/* Dashboard stats */
+.stat-card {
+text-align: center;
+padding: 20px;
+}
+
+.stat-number {
+font-size: 2rem;
+font-weight: bold;
+}
+
+/* Table */
+.table {
+background: white;
+border-radius: 12px;
+overflow: hidden;
+}
+
+.table thead {
+background: #212529;
+color: white;
+}
+
+.table td,
+.table th {
+vertical-align: middle;
+}
+
+/* Progress Bar */
+.progress {
+height: 22px;
+border-radius: 20px;
+background-color: #e9ecef;
+}
+
+.progress-bar {
+font-weight: 600;
+}
+
+/* Forms */
+.form-control,
+.form-select {
+border-radius: 10px;
+}
+
+.form-control:focus,
+.form-select:focus {
+box-shadow: 0 0 0 0.2rem rgba(13,110,253,.15);
+}
+
+/* Buttons */
+.btn {
+border-radius: 10px;
+}
+
+.btn-success,
+.btn-primary,
+.btn-danger {
+transition: all 0.2s ease;
+}
+
+.btn-success:hover,
+.btn-primary:hover,
+.btn-danger:hover {
+transform: translateY(-1px);
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+font-weight: 700;
+}
+
+/* Footer */
+footer {
+margin-top: 50px;
+padding: 20px 0;
+font-size: 0.9rem;
+color: #6c757d;
+}
+
+/* Login & Register Pages */
+.auth-card {
+max-width: 500px;
+margin: 50px auto;
+background: white;
+padding: 30px;
+border-radius: 15px;
+box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+/* Skill Badges */
+.badge-level {
+font-size: 0.85rem;
+padding: 8px 12px;
+border-radius: 20px;
+}
+
+/* Smooth Animation */
+
+* {
+  transition: background-color .2s ease,
+  color .2s ease,
+  border-color .2s ease;
+  }

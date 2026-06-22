@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<!-- HEADER -->
+<div class="d-flex justify-content-between align-items-center mb-3">
+
+    <h2>
+        {% trans "My Skills" %}
+    </h2>
+
+    <a href="/add/" class="btn btn-success">
+        <i class="fa-solid fa-plus"></i>
+        {% trans "Add Skill" %}
+    </a>
+
+</div>
+
+<!-- SEARCH -->
+<form method="get" class="mb-3">
+    <div class="input-group">
+
+        <input type="text"
+               name="q"
+               class="form-control"
+               placeholder="{% trans 'Search skill...' %}">
+
+        <button class="btn btn-primary">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            {% trans "Search" %}
+        </button>
+
+    </div>
+</form>
+
+<!-- TOTAL -->
+<div class="alert alert-info">
+    <i class="fa-solid fa-chart-simple"></i>
+    {% trans "Total Skills" %}: {{ total }}
+</div>
+
+<!-- TABLE -->
+<table class="table table-striped table-bordered align-middle">
+
+    <thead class="table-dark">
+        <tr>
+            <th>{% trans "Skill" %}</th>
+            <th>{% trans "Category" %}</th>
+            <th>{% trans "Level" %}</th>
+            <th>{% trans "Progress" %}</th>
+            <th>{% trans "Action" %}</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        {% for skill in skills %}
+
+        <tr>
+
+            <td>{{ skill.name }}</td>
+
+            <td>{{ skill.category }}</td>
+
+            <td>
+                <span class="badge bg-secondary">
+                    {{ skill.level }}
+                </span>
+            </td>
+
+            <!-- PROGRESS BAR -->
+            <td style="width: 200px;">
+
+                <div class="progress">
+
+                    <div class="progress-bar"
+                         role="progressbar"
+                         style="width: {{ skill.progress }}%;">
+
+                        {{ skill.progress }}%
+
+                    </div>
+
+                </div>
+
+            </td>
+
+            <!-- ACTION -->
+            <td>
+
+                <a href="/delete/{{ skill.id }}/"
+                   class="btn btn-danger btn-sm">
+
+                    <i class="fa-solid fa-trash"></i>
+                    {% trans "Delete" %}
+
+                </a>
+
+            </td>
+
+        </tr>
+
+        {% empty %}
+
+        <tr>
+            <td colspan="5" class="text-center text-muted">
+                {% trans "No skills found" %}
+            </td>
+        </tr>
+
+        {% endfor %}
+
+    </tbody>
+
+</table>
+
+{% endblock %}
