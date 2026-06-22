@@ -22,7 +22,7 @@ SkillForge is a Django-based web application for tracking and managing personal 
 - Django 6+
 - Bootstrap 5
 - SQLite3
-- HTML / CSS / JS
+- HTML / CSS 
 
 ---
 
