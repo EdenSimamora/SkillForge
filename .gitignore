@@ -2,3 +2,6 @@ __pycache__/
 db.sqlite3
 .venv/
 Admin.txt
+.venv/
+*.pyc
+.env
