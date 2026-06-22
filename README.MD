@@ -48,7 +48,7 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-🌍 Language Support
+🌍 Language Support: 
 English 🇬🇧
 Indonesia 🇮🇩
 
